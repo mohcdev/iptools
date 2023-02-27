@@ -1,0 +1,152 @@
+
+
+.wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    color: var(--dark);
+    font-size: 2rem;
+}
+
+.container .txt_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.txt_wrapper>textarea, .txt_wrapper div {
+    width: 48%;
+}
+
+textarea {
+    height: 200px;
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    outline: none;
+    box-shadow: 0 0 5px #aaa;
+    padding: 5px;
+    transition: border 0.3s;
+}
+
+textarea::placeholder {
+    text-transform: capitalize;
+}
+
+textarea:hover {
+    border-color: #aaa;
+}
+
+.txt_wrapper div textarea {
+    width: 100%;
+}
+
+.txt_wrapper div {
+    position: relative;
+}
+
+.txt_wrapper div span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: capitalize;
+    background-color: crimson;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+    display: none;
+}
+
+div span.displayError {
+    display: block;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btns button {
+    padding: 1rem 0;
+    font-size: 1rem;
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 15px 0;
+    width: 32%;
+    border: 1px solid transparent;
+    position: relative;
+    box-shadow: 0 0 5px #aaa;
+    transition: box-shadow 0.3s;
+}
+
+.btns button:hover {
+    box-shadow: 0 0 5px #888;
+}
+
+.btns button::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #646e9f;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.btns button:nth-child(1)::before {
+    content: "3";
+}
+
+.btns button:nth-child(2)::before {
+    content: "1";
+}
+
+.btns button:nth-child(3)::before {
+    content: "2";
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.Spam_Keywords p {
+    background: #f9a3a3;
+    padding: 15px;
+    color: #232346;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    display: none;
+}
+
+.Spam_Keywords p.visible {
+    display: block;
+}
+
+.Spam_Keywords span {
+    padding: 5px;
+    background-color: #eee;
+    border-radius: 5px;
+    margin: 0 5px;
+}
